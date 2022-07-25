@@ -1,0 +1,28 @@
+.contact-content {
+    background-color: $white;
+    margin: 5rem 0;
+    padding: 5rem;
+}
+
+.contact-title {
+    margin: 2rem 0;
+    text-align: center;
+}
+
+.contact-grid {
+    @include tablet {
+        @include grid( 2, 10rem );
+        align-items: center;
+    }
+
+    .contact-image {
+        display: flex;
+        justify-content: center;
+        margin: 5rem 0 0 0;
+
+        .image {
+            width: 45rem;
+            border-radius: 5rem;
+        }
+    }
+}

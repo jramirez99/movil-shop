@@ -1,0 +1,105 @@
+.container-desc {
+    margin: 4rem 0 0 0;
+    
+    .movil-image {
+        background-color: $white;
+        border-radius: 2rem;
+        display: flex;
+        justify-content: center;
+        margin: 0 auto;
+        max-width: 85%;
+
+        @include tablet {
+            max-width: 60%;
+        }
+        
+        img {
+            padding: 3rem;
+            max-width: 30rem;
+
+            @include tablet {
+                max-width: 50rem;
+            }
+        }
+    }
+}
+
+
+.content-movil {
+    background-color: $white;
+    border-radius: 2rem;
+    margin: 0 auto;
+    margin-top: 5rem;
+    padding: 2rem;
+
+    @include tablet {
+        max-width: 90%;
+    }
+    @include desktop {
+        max-width: 70%;
+    }
+
+    .movil-info {
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+        font-weight: $bold;
+
+        @include tablet {
+            flex-direction: row;
+            justify-content: space-between;
+            margin: 2rem 0 0 0;
+        }
+
+        .brand .model {
+            color: $primary-color;
+            margin: 2rem 0;
+        }
+        .price {
+            color: $second-color;
+            margin: 1rem 0;
+        }
+        @include tablet {
+            p {
+                margin: 0;
+            }
+        }
+        button {
+            background-color: $primary-color;
+            border-radius: 1rem;
+            border: none;
+            color: $white;
+            font-weight: $bold;
+            padding: 1rem;
+        }
+    }
+
+    .content-back {
+        margin: 0 auto;
+        max-width: 20%;
+
+        @include tablet {
+            max-width: 10%;
+        }
+        .back {
+            background-color: $primary-color;
+            border: none;
+            color: $white;
+            font-weight: $bold;
+            padding: 1rem 2rem;
+        }
+    }
+}
+
+.movil-description {
+    h3 {
+        margin: 3rem 0;
+    }
+    p {
+        font-size: 1.5rem;
+
+        @include tablet {
+            font-size: 2rem;
+        }
+    }
+}

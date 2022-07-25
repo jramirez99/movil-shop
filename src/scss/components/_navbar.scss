@@ -1,0 +1,68 @@
+.bg-barra {
+    background-color: $primary-color;
+    color: $white;
+    font-weight: $bold;
+    padding: 3rem;
+
+
+    .content {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        @include tablet {
+            justify-content: space-between;
+            flex-direction: row;
+            align-items: center;
+        }
+    }
+    
+    .logo {
+        p {
+            color: $white;
+            font-weight: $black;
+            
+            span {
+                color: $second-color;
+            }
+        }
+    }
+
+    .nav {
+        display: flex;
+        align-items: center;
+        gap: 4rem;
+        margin: 2rem 0;
+
+        @include tablet {
+            margin: 0;
+            gap: 1rem;
+        }
+
+        .item {
+            font-weight: $bold;
+            color: $white;
+            padding: 0 1rem;
+        }
+        .icon-cart {
+            color: $white;
+            padding: 1rem 0 0 0;
+        }
+    }
+
+    .sesion {
+        display: flex;
+        gap: 3rem;
+
+        span {
+            color: $second-color;
+        }
+        button {
+            background-color: unset;
+            border: none;
+            color: $white;
+            font-weight: $bold;
+        }
+    }
+}

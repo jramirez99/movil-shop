@@ -1,0 +1,63 @@
+.grid {
+    @include grid( 2, 2rem );
+    
+    @include desktop {
+        @include grid( 3, 4rem );
+    }
+    
+    .card {
+        .container-image {
+            max-width: 10rem;
+            min-height: 12rem;
+            margin: 0 auto;
+    
+            :hover {
+                cursor: pointer;
+            }
+    
+            .image {
+                object-fit: cover;
+                max-width: 8rem;
+                min-height: 8rem;
+                margin: 1rem 0 0 0;
+            }
+        }
+    
+        .info {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin: 1rem 0 0 0;
+            font-weight: $bold;
+    
+            .model, .brand {
+                color: $primary-color;
+            }
+            .price {
+                color: $second-color;
+            }
+        }
+    
+        .content-buttons {
+            display: flex;
+            justify-content: space-between;
+            
+            .add-cart, .more {
+                background-color: $primary-color;
+                color: $white;
+                border: none;
+                margin: 0 auto;
+                margin-bottom: 3rem;
+                padding: 1rem;
+                font-weight: $bold;
+                text-align: center;
+            }
+            .add-cart {
+                width: 50%;
+            }
+            .more {
+                width: 40%;
+            }
+        }
+    }
+}

@@ -1,0 +1,68 @@
+footer {
+    background-color: $primary-color;
+
+    .footer {
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+        margin-top: 5rem;
+        padding: 5rem 0 0 0;
+    
+        @include desktop {
+            align-items: center;
+            color: $white;
+            flex-direction: row;
+            justify-content: space-between;
+            padding: 4rem;
+        }
+    }
+
+    .socials {
+        color: $white;
+        display: flex;
+        gap: 2rem;
+        margin: 0 0 4rem 0;
+
+        @include desktop {
+            margin: 0;
+        }
+
+        li {
+            list-style: none;
+
+            i {
+                font-size: 4rem;
+            }
+        }
+    }
+
+    .exact-ubication {
+        p {
+            color: $white;
+            font-size: 1.4rem;
+            font-weight: $bold;
+            margin: 0 0 4rem 0;
+
+            @include desktop {
+                margin: 0;
+            }
+        }
+    }
+
+    .map-size {
+        height: 20rem;
+        width: 40rem;
+
+        @include desktop {
+            height: 20rem;
+            width: 50rem;
+        }
+    }
+
+    .copyright {
+        background-color: $second-color;
+        color: $primary-color;
+        margin: 0;
+        text-align: center;
+    }
+}

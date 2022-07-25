@@ -1,0 +1,19 @@
+/** Configuracion **/
+@import 'base/variables';
+@import 'base/globales';
+@import 'base/mixins';
+@import 'base/normalize';
+@import 'base/utilidades';
+
+
+/** coponentes **/
+@import 'components/aboutus';
+@import 'components/contact';
+@import 'components/footer';
+@import 'components/form';
+@import 'components/login';
+@import 'components/movilCard';
+@import 'components/movilDesc';
+@import 'components/movilSearch';
+@import 'components/navbar';
+@import 'components/search';

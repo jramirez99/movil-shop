@@ -1,0 +1,45 @@
+.about-us {
+    background-color: $white;
+    margin: 4rem 0 0 0;
+    padding: 4rem;
+
+    h1 {
+        color: $primary-color;
+        text-align: center;
+    }
+
+    .about-grid {
+        margin: 5rem 0 0 0;
+
+        @include tablet {
+            align-items: center;
+
+            @include grid( 2, 4rem );
+        }
+        @include desktop {
+            margin: 8rem 0 0 0;
+        }
+
+        .about-image {
+            img {
+                border: 3rem solid $white;
+                transform: rotate(-4deg);
+                -webkit-box-shadow: 4px 6px 6px -4px rgba(0,0,0,0.75);
+                -moz-box-shadow: 4px 6px 6px -4px rgba(0,0,0,0.75);
+                box-shadow: 4px 6px 6px -4px rgba(0,0,0,0.75);
+            }
+        }
+    }
+
+    .about-info {
+        p {
+            color: $primary-color;
+            line-height: 4rem;
+            margin: 5rem 0 0 0;
+
+            @include tablet {
+                margin: 0;
+            }
+        }
+    }
+}

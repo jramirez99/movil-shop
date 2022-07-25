@@ -1,0 +1,28 @@
+//Fuentes
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;600;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;500;700;900&display=swap');
+
+// fonts
+$font-main: 'Poppins', sans-serif;
+$font-second: 'Roboto', sans-serif;
+
+// size media queries
+$movil: 480px;
+$tablet: 768px;
+$desktop: 1024px;
+
+// Colors
+$primary-color: #012534;
+$second-color: #6AC293;
+$white: #FFFFFF;
+$gray: #EBEAEF;
+
+// separation
+$separation: 3rem;
+
+
+// fonts thickness
+$light: 300;
+$regular : 400;
+$bold: 700;
+$black: 900

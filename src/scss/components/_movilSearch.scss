@@ -1,0 +1,75 @@
+.card-result {
+    align-items: center;
+    background-color: $white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 4rem;
+
+    @include tablet {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .container-image {
+        align-items: center;
+        display: flex;
+        margin: 0 5rem;
+        max-width: 10rem;
+
+        :hover {
+            cursor: pointer;
+        }
+        .image {
+            margin: 1rem 0 0 0;
+            max-width: 8rem;
+            min-height: 8rem;
+            object-fit: cover;
+        }
+    }
+
+    .info {
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+        font-weight: $bold;
+        margin: 1rem 0 0 0;
+        text-align: center;
+
+        p {
+            width: 15rem;
+
+            @include tablet {
+                text-align: justify;
+            }
+        }
+        .model, .brand {
+            color: $primary-color;
+        }
+        .price {
+            color: $second-color;
+        }
+    }
+
+    .movil-description-result {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: center;
+
+        h3 {
+            color: $primary-color;
+            font-size: 2rem;
+            margin: 1rem 0;
+        }
+        p {
+            font-size: 1.8rem;
+            margin: 1rem 0;
+            padding: 0 3rem;
+            
+            @include tablet {
+                padding: 0 0 0 4rem;
+            }
+        }
+    }
+}
